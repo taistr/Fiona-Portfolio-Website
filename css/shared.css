@@ -56,6 +56,20 @@ li {
   padding: 1rem 1.5rem;
 }
 
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
 #nav_logo {
   font-family: "La Belle Aurore", cursive;
   font-size: 48px;
