@@ -28,6 +28,9 @@ li {
     background-color: $primary-color;
     height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .header {
@@ -66,6 +69,11 @@ li {
     align-items: center;
 }
 
+.socials {
+    width: 50px;
+    margin: 1rem;
+}
+
 .main_content {
     display: flex;
     justify-content: center;
@@ -83,7 +91,7 @@ li {
 }
 
 .portrait {
-    width:550px;
+    width:500px;
     margin-left: -150px;
 }
 
@@ -94,6 +102,25 @@ li {
     background: #FFB570;
     top: 0px;
     
+}
+
+.about_me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow_circle {
+    background: white;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow {
+    width: 6rem;
 }
 
 .hamburger {
