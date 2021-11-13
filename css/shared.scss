@@ -36,13 +36,15 @@ li {
     align-items: center;
 }
 
-
-
 .nav_bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem;
+    padding: 3em 4em;
+}
+
+.nav_link {
+    font-size: 20px;
 }
 
 .nav_link_prom {
@@ -55,13 +57,43 @@ li {
 }
 
 .nav_link_right {
-    margin-left: 2rem;
+    margin-left: 4rem;
 }
 
 .socials_nav_bar {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.main_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    border-radius: 100%
+}
+
+.portrait_highlight {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.portrait {
+    width:550px;
+    margin-left: -150px;
+}
+
+
+.highlight_circle {
+    height: 300px; 
+    width: 300px;
+    background: #FFB570;
+    top: 0px;
+    
 }
 
 .hamburger {
@@ -81,6 +113,10 @@ li {
 #nav_logo {
     font-family: $flair-font;
     font-size: 48px;
+}
+
+#main_text {
+    font-size: 64px;
 }
 
 /* Grid View CSS */
