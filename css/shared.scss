@@ -9,10 +9,9 @@ $main-font: 'Lato';
 }
 
 body {
-    margin: 0px;
+    margin: 0;
     font-family: $main-font, sans-serif;
     color: black;
-    width: 100%;
 }
 
 a {
@@ -27,6 +26,8 @@ li {
 
 .container {
     background-color: $primary-color;
+    height: 100vh;
+    width: 100%;
 }
 
 .header {
@@ -35,16 +36,32 @@ li {
     align-items: center;
 }
 
-.nav_link {
-    text-decoration: underline;
-    font-style: italic;
-}
+
 
 .nav_bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
+}
+
+.nav_link_prom {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.nav_link_left {
+    margin-right: 2rem;
+}
+
+.nav_link_right {
+    margin-left: 2rem;
+}
+
+.socials_nav_bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hamburger {
