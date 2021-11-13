@@ -3,6 +3,8 @@ $flair-font: 'La Belle Aurore', cursive;
 $main-font: 'Lato';
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -10,6 +12,7 @@ body {
     margin: 0px;
     font-family: $main-font, sans-serif;
     color: black;
+    width: 100%;
 }
 
 a {
@@ -18,16 +21,33 @@ a {
     font-weight: bold;
 }
 
+li {
+    list-style: none;
+}
+
 .container {
     background-color: $primary-color;
 }
 
-.prom_link {
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_link {
     text-decoration: underline;
     font-style: italic;
 }
 
-#nav_name {
+.nav_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+#nav_logo {
     font-family: $flair-font;
     font-size: 48px;
 }
