@@ -12,7 +12,7 @@
         <div class="container">
             <div class="header col-12">
                 <div class="hamburger" onclick="toggleMenu()">
-                    <img src="media/list.svg"></img>
+                    <img src="media/list.svg" class="menu-button"></img>
                 </div>
 
                 <ul class="nav-bar">
@@ -38,26 +38,24 @@
             </div>
 
 
-            <div >
-
-
-                <div >                       
-                    <h1 class="heading_text">Hi 👋, <br>I'm <br>Fiona!</h1>
+            <div class="content">
+                <div class="greeting col-12">                       
+                    <h1 class="heading-text">Hi 👋, <br>I'm <br>Fiona!</h1>
                 </div>
                 
 
-                <div >
-                    <div  ></div>
-                    <img src="media/Professional_Portrait_Fiona.jpg" style="width:20rem"></img>
+                <div class="portrait-container col-12">
+                    <div></div>
+                    <img src="media/Professional_Portrait_Fiona.jpg" class="portrait" style="width:20rem"></img>
                 </div>
                 
-                <div >
+                <div class="col-12">
                     <a href="about.html">
-                        <div>
-                            <div >
-                                <img src="media/arrow-right.svg"></img>
+                        <div class="about-container">
+                            <div class="about-circle">
+                                <img src="media/arrow-right.svg" class="arrow"></img>
                             </div>
-                            <a href="#">About Me</a>
+                            <a href="#" class="about-text">About Me</a>
                         </div>
                     </a>
                     
@@ -65,7 +63,7 @@
                 
             </div>
 
-            <div class="footer" >
+            <div class="footer col-12" >
                 <span>Designed by Tyson Truong ©</span>
             </div>
 
@@ -73,8 +71,18 @@
         </div>
 
         <div class="menu fade-in">
-            <div class="cross" onclick="toggleMenu()">
-                <img src="media/x.svg"></img>
+            <div class="header">
+                <div class="cross" onclick="toggleMenu()">
+                    <img src="media/x.svg" class="menu-button"></img>
+                </div>
+            </div>
+            <div class="col-12">
+                <ul class="menu-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
             </div>
             
         </div>
