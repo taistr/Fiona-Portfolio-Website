@@ -85,6 +85,12 @@ li {
 
 .menu-button {
     width: 3rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.menu-button:hover {
+    background-color: $primary-color;
 }
 
 .hamburger {
@@ -106,6 +112,7 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     margin: 0rem 1rem;
 }
 
@@ -124,7 +131,8 @@ li {
 }
 
 .portrait {
-    border-radius: 50%
+    border-radius: 50%;
+    width: 20rem;
 }
 
 .about-circle {
@@ -199,7 +207,7 @@ a:hover {
     width: 100%;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 769px) {
   /* For desktop: */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
@@ -213,5 +221,24 @@ a:hover {
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+        margin: 0rem 1rem;
+    }
+
+    .portrait {
+        width: 25rem;
+    }
 
 }
