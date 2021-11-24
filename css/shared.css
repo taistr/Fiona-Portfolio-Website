@@ -35,6 +35,11 @@ li {
   overflow-x: hidden;
 }
 
+/* General */
+.emoji {
+  font-weight: normal;
+}
+
 /*Menu*/
 .menu {
   display: none;
@@ -46,7 +51,17 @@ li {
 }
 
 .menu.active {
-  display: inline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu-list-container {
+  margin-top: 20vh;
 }
 
 .menu-list {
@@ -72,32 +87,45 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1rem;
 }
 
-.nav-bar {
-  display: none;
+.nav-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 1.5rem;
+}
+
+.nav-right {
+  margin: 1rem 1.5rem;
+}
+
+.socials {
+  width: 2.5rem;
+  margin-left: 1rem;
 }
 
 #nav_logo {
   font-family: "La Belle Aurore", cursive, "Lato", sans-serif;
   font-size: 1.75rem;
+  -webkit-transform: translateY(0.25rem);
+          transform: translateY(0.25rem);
 }
 
 .menu-button {
   width: 3rem;
   cursor: pointer;
   border-radius: 50%;
-}
-
-.menu-button:hover {
-  background-color: #FFDFC1;
+  margin-right: 0.5rem;
 }
 
 .hamburger {
@@ -191,12 +219,32 @@ li {
   margin: 1rem;
 }
 
+.about-circle {
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.about-circle:hover {
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
 .about-text {
   font-style: italic;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+#fun-emoji {
+  cursor: pointer;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+#fun-emoji:hover {
+  font-size: 7rem;
 }
 
 /*Footer CSS*/

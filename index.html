@@ -11,28 +11,18 @@
     <body>
         <div class="container">
             <div class="header col-12">
-                <div class="hamburger" onclick="toggleMenu()">
-                    <img src="media/list.svg" class="menu-button"></img>
+                <div class="nav-left">
+                    <div class="hamburger" onclick="toggleMenu()">
+                        <img src="media/list.svg" class="menu-button"></img>
+                    </div>
+
+                    <a href="index.html" id="nav_logo"><span>Fiona Zhang</span></a>
                 </div>
+                
 
-                <ul class="nav-bar">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li >
-                        <a href="#">Services</a>
-                    </li>
-                </ul>
-
-                <a href="index.html" id="nav_logo"><span>Fiona Zhang</span></a>
-                <ul class="nav-bar">
-                    <li>
-                        <div >
-                            <a href="https://www.linkedin.com/in/fionayxzhang/" target="_blank"><img src="media/linkedin.svg" class="socials"></img></a>
-                            <a href="https://www.youtube.com/channel/UCcE5gtZ2_ksaqj0AqnD7_0A" target="_blank"><img src="media/youtube.svg" class="socials"></img></a>
-                        </div>
-                        <a href="#" >Resume</a>
-                    </li>
+                <ul class="nav-right">                    
+                    <a href="https://www.youtube.com/channel/UCcE5gtZ2_ksaqj0AqnD7_0A" target="_blank"><img src="media/youtube.svg" class="socials"></img></a>
+                    <a href="https://www.linkedin.com/in/fionayxzhang/" target="_blank"><img src="media/linkedin.svg" class="socials"></img></a>
                 </ul>
 
             </div>
@@ -40,7 +30,7 @@
 
             <div class="content">
                 <div class="greeting col-3">                       
-                    <h1 class="heading-text">Hi 👋, <br>I'm <br>Fiona!</h1>
+                    <h1 class="heading-text">Hi <span class="emoji" id="fun-emoji" onclick="cycleEmoji()">👋</span>, <br>I'm <br>Fiona!</h1>
                 </div>
                 
 
@@ -72,11 +62,11 @@
 
         <div class="menu fade-in">
             <div class="header">
-                <div class="cross" onclick="toggleMenu()">
+                <div class="cross nav-left" onclick="toggleMenu()">
                     <img src="media/x.svg" class="menu-button"></img>
                 </div>
             </div>
-            <div class="col-12">
+            <div class="col-12 menu-list-container">
                 <ul class="menu-list">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
