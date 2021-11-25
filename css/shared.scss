@@ -54,6 +54,10 @@ li {
     width: 100%;
     height: 100%;
     top: 0rem;
+    
+    a:hover {
+        text-decoration: underline;
+    }
 }
 
 .menu.active {
@@ -80,24 +84,21 @@ li {
 /*Header CSS*/
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    padding: 1.1rem;
 }
 
 .nav-left {
-    display: flex;
+    display: none;
     align-items: center;
 
     margin: 1rem 1.5rem;
 }
 
 .nav-right {
+    display: none;
     margin: 1rem 1.5rem;
-}
-
-.socials {
-    width: 2.5rem;
-    margin-left: 1rem;
 }
 
 #nav_logo {
@@ -190,10 +191,6 @@ li {
     font-style: italic;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 #fun-emoji {
     cursor: pointer;
     transition: 0.1s;
@@ -206,8 +203,15 @@ a:hover {
 /*Footer CSS*/
 .footer {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin: 2rem 0rem;;
+}
+
+.socials {
+    width: 2.5rem;
+    margin: 1rem;
 }
 
 /*Animation CSS*/
@@ -259,6 +263,7 @@ a:hover {
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
 
+    /* Whole page */
     .container {
         display: flex;
         flex-direction: column;
@@ -274,8 +279,56 @@ a:hover {
         margin: 0rem 1rem;
     }
 
+    /*Header*/
+
+    //Hides the hamburger menu and reveals the nav-right and nav-left buttons
+    .hamburger {
+        display: None;
+    }  
+
+    .header {
+        justify-content: space-between;
+         
+    }
+
+    .nav-left {
+        display: inline;
+        
+        a {
+            margin-right: 2rem;
+        }
+        
+        a:hover {
+            .nav-link {
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    .nav-right {
+        display: inline;
+
+        a:hover {
+            .nav-link {
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    #nav_logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Content */
     .portrait {
         width: 25rem;
     }
+
+
+    /* Footer */
+
+    
 
 }

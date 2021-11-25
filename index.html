@@ -11,20 +11,22 @@
     <body>
         <div class="container">
             <div class="header col-12">
-                <div class="nav-left">
-                    <div class="hamburger" onclick="toggleMenu()">
-                        <img src="media/list.svg" class="menu-button"></img>
-                    </div>
-
-                    <a href="index.html" id="nav_logo"><span>Fiona Zhang</span></a>
+                <!-- On mobile, nav-right and nav-left will have display: none with flex-start. ON desktop, will have display:inline with space-between -->
+                <div class="nav-left"> 
+                    <a href="#"><span class="emoji">🏠</span><span class="nav-link">Home</span></a>
+                    <a href="#"><span class="emoji">👩</span><span class="nav-link">About</span></a>
+                    <a href="#"><span class="emoji">🔬</span><span class="nav-link">Projects</span></a>
                 </div>
                 
+                <div class="hamburger" onclick="toggleMenu()">
+                    <img src="media/list.svg" class="menu-button"></img>
+                </div>
 
-                <ul class="nav-right">                    
-                    <a href="https://www.youtube.com/channel/UCcE5gtZ2_ksaqj0AqnD7_0A" target="_blank"><img src="media/youtube.svg" class="socials"></img></a>
-                    <a href="https://www.linkedin.com/in/fionayxzhang/" target="_blank"><img src="media/linkedin.svg" class="socials"></img></a>
-                </ul>
+                <a href="index.html" id="nav_logo"><span>Fiona Zhang</span></a>
 
+                <div class="nav-right">
+                    <a href="#"><span class="emoji">📃</span><span class="nav-link">Resume</span></a>
+                </div>
             </div>
 
 
@@ -54,6 +56,10 @@
             </div>
 
             <div class="footer col-12" >
+                <ul class="footer-socials">                    
+                    <a href="https://www.youtube.com/channel/UCcE5gtZ2_ksaqj0AqnD7_0A" target="_blank"><img src="media/youtube.svg" class="socials"></img></a>
+                    <a href="https://www.linkedin.com/in/fionayxzhang/" target="_blank"><img src="media/linkedin.svg" class="socials"></img></a>
+                </ul>
                 <span>Designed by Tyson Truong ©</span>
             </div>
 
@@ -62,7 +68,7 @@
 
         <div class="menu fade-in">
             <div class="header">
-                <div class="cross nav-left" onclick="toggleMenu()">
+                <div class="cross" onclick="toggleMenu()">
                     <img src="media/x.svg" class="menu-button"></img>
                 </div>
             </div>

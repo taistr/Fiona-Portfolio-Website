@@ -50,6 +50,10 @@ li {
   top: 0rem;
 }
 
+.menu a:hover {
+  text-decoration: underline;
+}
+
 .menu.active {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -87,18 +91,17 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 1.1rem;
 }
 
 .nav-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -106,12 +109,8 @@ li {
 }
 
 .nav-right {
+  display: none;
   margin: 1rem 1.5rem;
-}
-
-.socials {
-  width: 2.5rem;
-  margin-left: 1rem;
 }
 
 #nav_logo {
@@ -233,10 +232,6 @@ li {
   font-style: italic;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 #fun-emoji {
   cursor: pointer;
   -webkit-transition: 0.1s;
@@ -252,10 +247,22 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin: 2rem 0rem;
+}
+
+.socials {
+  width: 2.5rem;
+  margin: 1rem;
 }
 
 /*Animation CSS*/
@@ -349,6 +356,7 @@ a:hover {
   .col-12 {
     width: 100%;
   }
+  /* Whole page */
   .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -377,8 +385,40 @@ a:hover {
             align-items: center;
     margin: 0rem 1rem;
   }
+  /*Header*/
+  .hamburger {
+    display: None;
+  }
+  .header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav-left {
+    display: inline;
+  }
+  .nav-left a {
+    margin-right: 2rem;
+  }
+  .nav-left a:hover .nav-link {
+    text-decoration: underline;
+  }
+  .nav-right {
+    display: inline;
+  }
+  .nav-right a:hover .nav-link {
+    text-decoration: underline;
+  }
+  #nav_logo {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  /* Content */
   .portrait {
     width: 25rem;
   }
+  /* Footer */
 }
 /*# sourceMappingURL=shared.css.map */
