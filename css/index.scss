@@ -1,0 +1,147 @@
+$primary-color: #FFDFC1;
+$highlight-color: #FFB570;
+$accent-color: #545454;
+$flair-font: 'La Belle Aurore', cursive;
+$main-font: 'Lato';
+
+/*Content CSS*/
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0rem 1rem;
+}
+
+.greeting {
+    display: flex;
+    justify-content: center;
+}
+
+.heading-text {
+    font-size: 5rem;
+}
+
+.portrait-container {
+    display: flex;
+    justify-content: center;
+}
+
+.portrait {
+    border-radius: 50%;
+    width: 20rem;
+}
+
+.about-circle {
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.arrow {
+    width: 5rem;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.about-circle {
+    transition-duration: 0.2s;
+}
+
+.about-circle:hover {
+    transform: translateY(-1rem);
+}
+
+.about-text {
+    font-style: italic;
+}
+
+#fun-emoji {
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+#fun-emoji:hover {
+    font-size: 7rem;
+}
+
+/*Footer CSS*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0rem;;
+}
+
+.socials {
+    width: 2.5rem;
+    margin: 1rem;
+}
+
+/*Animation CSS*/
+.fade-in {
+    animation: fadeIn ease 0.2s;
+
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+}
+
+.fade-out {
+    animation: fadeOut ease 0.2s;
+}
+
+@keyframes fadeOut {
+    0% {
+      opacity:1;
+    }
+    100% {
+      opacity:0;
+    }
+}
+
+/* Grid View CSS */
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+  /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    /* Content */
+    .portrait {
+        width: 25rem;
+    }
+
+}

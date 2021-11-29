@@ -115,9 +115,10 @@ li {
 
 #nav_logo {
   font-family: "La Belle Aurore", cursive, "Lato", sans-serif;
-  font-size: 1.75rem;
+  font-size: 2rem;
   -webkit-transform: translateY(0.25rem);
           transform: translateY(0.25rem);
+  font-weight: normal;
 }
 
 .menu-button {
@@ -142,106 +143,6 @@ li {
   background-color: #101010;
 }
 
-/*Content CSS*/
-.content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0rem 1rem;
-}
-
-.greeting {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.heading-text {
-  font-size: 5rem;
-}
-
-.portrait-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.portrait {
-  border-radius: 50%;
-  width: 20rem;
-}
-
-.about-circle {
-  background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 8rem;
-  height: 8rem;
-  border-radius: 50%;
-}
-
-.arrow {
-  width: 5rem;
-}
-
-.about-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 1rem;
-}
-
-.about-circle {
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
-}
-
-.about-circle:hover {
-  -webkit-transform: translateY(-1rem);
-          transform: translateY(-1rem);
-}
-
-.about-text {
-  font-style: italic;
-}
-
-#fun-emoji {
-  cursor: pointer;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
-}
-
-#fun-emoji:hover {
-  font-size: 7rem;
-}
-
 /*Footer CSS*/
 .footer {
   display: -webkit-box;
@@ -263,53 +164,6 @@ li {
 .socials {
   width: 2.5rem;
   margin: 1rem;
-}
-
-/*Animation CSS*/
-.fade-in {
-  -webkit-animation: fadeIn ease 0.2s;
-          animation: fadeIn ease 0.2s;
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.fade-out {
-  -webkit-animation: fadeOut ease 0.2s;
-          animation: fadeOut ease 0.2s;
-}
-
-@-webkit-keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
 }
 
 /* Grid View CSS */
@@ -415,10 +269,5 @@ li {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
-  /* Content */
-  .portrait {
-    width: 25rem;
-  }
-  /* Footer */
 }
 /*# sourceMappingURL=shared.css.map */

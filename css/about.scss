@@ -1,0 +1,42 @@
+$primary-color: #FFDFC1;
+$highlight-color: #FFB570;
+$accent-color: #545454;
+$flair-font: 'La Belle Aurore', cursive;
+$main-font: 'Lato';
+
+hr {
+    border: none;
+    color: $accent-color;
+    background-color: $accent-color;
+    height:1px;
+}
+
+h1 {
+    color: $highlight-color;
+    font-size: 4rem;
+}
+
+p {
+    color: $accent-color;
+}
+
+.container {
+    justify-content: flex-start;
+    background-color: white;
+}
+
+.content {
+    margin: 0 25%;
+    flex-wrap: wrap;
+}
+
+.heading-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    h1 {
+        margin-right: 2rem;
+    }
+}
+
