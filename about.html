@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="css/about.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Caveat&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="container">
@@ -16,7 +16,7 @@
                 <div class="nav-left"> 
                     <a href="#"><span class="emoji">🏠</span><span class="nav-link">Home</span></a>
                     <a href="#"><span class="emoji">👩</span><span class="nav-link">About</span></a>
-                    <a href="#"><span class="emoji">🎓</span><span class="nav-link">Tutoring</span></a>
+                    <a href="#"><span class="emoji">📚</span><span class="nav-link">Tutoring</span></a>
                     <a href="#"><span class="emoji">🔬</span><span class="nav-link">Projects</span></a>
                 </div>
                 
@@ -33,21 +33,28 @@
 
 
             <div class="content">
-                <div class="heading-container col-12">
+                <!-- <div class="heading-container col-12">
                     <h1><span style="text-decoration-line:underline;">About</span></h1>
-                </div>
-                <div class="role-container col-4">
-                    <h2>
-                        I'm a <span class="role">Tutor<span class="emoji">🎓</span></span>
-                    </h2>
-
-                </div>
+                </div> -->
+                
                 <div class="about-text-container col-8">
+                    <h1>
+                        About
+                    </h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
-                
+                <div class="role-container col-4">
+                    <div class="role-fun-container" onclick="cycleRole()">
+                        <h2>
+                            I'm a ...<br><span class="role" id="role-span">Tutor</span><span class="emoji" id="role-emoji">📚</span>
+                        </h2>
+                        <div style="display: flex; justify-content: center;">
+                            <p>(click me)</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="footer col-12" >

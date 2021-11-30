@@ -10,36 +10,115 @@ h1 {
   font-size: 4rem;
 }
 
+h2 {
+  color: #545454;
+  font-size: 4rem;
+}
+
 p {
   color: #545454;
+  font-size: 1.2rem;
 }
 
 .container {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: white;
 }
 
-.content {
-  margin: 0 25%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.heading-container {
+.role-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
 }
 
-.heading-container h1 {
-  margin-right: 2rem;
+.role-fun-container {
+  background-color: #FFDFC1;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 100%;
+  cursor: pointer;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+}
+
+.role-fun-container p {
+  font-family: "Caveat", cursive;
+}
+
+.role-fun-container div {
+  visibility: hidden;
+}
+
+.role {
+  color: black;
+}
+
+.about-text-container {
+  padding: 0rem 1.5rem;
+}
+
+@media screen and (min-width: 769px) {
+  .container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: white;
+  }
+  .content {
+    margin: 0 25%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .heading-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .heading-container h1 {
+    margin-right: 2rem;
+  }
+  .role-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1rem;
+  }
+  .role-fun-container {
+    background-color: #FFDFC1;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    padding-bottom: 0rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    cursor: pointer;
+    -webkit-transition-duration: 0.1s;
+            transition-duration: 0.1s;
+  }
+  .role-fun-container p {
+    visibility: hidden;
+    font-family: "Caveat", cursive;
+  }
+  .role-fun-container:hover {
+    padding-bottom: 1.5rem;
+  }
+  .role-fun-container:hover p {
+    visibility: visible;
+  }
 }
 /*# sourceMappingURL=about.css.map */
