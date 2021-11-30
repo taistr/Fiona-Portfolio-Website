@@ -10,7 +10,7 @@ hr {
     border: none;
     color: $accent-color;
     background-color: $accent-color;
-    height:1px;
+    height: 1px;
 }
 
 h1 {
@@ -20,7 +20,7 @@ h1 {
 
 h2 {
     color: $accent-color;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 p {
@@ -28,11 +28,25 @@ p {
     font-size: 1.2rem;
 }
 
+/*Whole page CSS*/
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .container {
-    justify-content: space-between;
+    justify-content: flex-start;
     background-color: $background-color ;
 }
 
+.content {
+    padding: 0rem 1.5rem;
+    padding-top: 5rem;
+}
+
+
+/* Display Card CSS */
 .role-container {
     display: flex;
     justify-content: center;
@@ -47,7 +61,6 @@ p {
     padding: 1.5rem;
 
     width: 100%;
-    cursor: pointer;
 
     transition-duration: 0.1s;
 
@@ -64,20 +77,44 @@ p {
     color: black;
 }
 
-.about-text-container {
-    padding: 0rem 1.5rem;
+/* Content CSS */
+
+.subject-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.tutor-profile {
+    color: $accent-color;
+    text-decoration-line: underline;
+}
+
+
+
+.tutor-section {
+    margin-bottom: 1rem;
 
     h1 {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
+    h2 {
+        margin-bottom: 1rem;
+    }
+    
     p {
         margin-bottom: 1rem;
     }
 }
 
-@media screen and (min-width: 769px) {
+.yt-container {
+    display: flex;
+    justify-content: center;
+}
 
+@media screen and (min-width: 769px) {
     
     .content {
         margin: 0 25%;
@@ -94,10 +131,6 @@ p {
         }
     }
 
-    .about-text-container {
-        margin-bottom: 2rem;
-    }
-    
     .role-container {
        display: flex;
        justify-content: center;
@@ -111,12 +144,13 @@ p {
         border-radius: 1rem;
         padding: 1.5rem;
         padding-bottom: 0rem;
-        width: fit-content;
-    
-    
-        cursor: pointer;
+        width: 100%;
     
         transition-duration: 0.1s;
+
+        h2 {
+            text-align: center;
+        }
     
         p {
             visibility: hidden;
@@ -124,15 +158,11 @@ p {
         }
     }
     
-    .role-fun-container:hover {
-    
-        padding-bottom: 1.5rem;
-    
-        p {
-            visibility: visible;
-        }
-    
+    .tutor-profile {
+        text-decoration: none;
     }
-    
-    
+
+    .tutor-profile:hover {
+        text-decoration-line: underline;
+    }
 }

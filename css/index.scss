@@ -1,10 +1,21 @@
+$background-color: #FBFBF0;
 $primary-color: #FFDFC1;
 $highlight-color: #FFB570;
 $accent-color: #545454;
 $flair-font: 'La Belle Aurore', cursive;
 $main-font: 'Lato';
+$hand-font: 'Caveat', cursive;
+
+/*Header CSS*/
+.header {
+    position: relative;
+}
 
 /*Content CSS*/
+.container {
+    background-color: $primary-color;
+}
+
 .content {
     display: flex;
     flex-direction: column;
@@ -20,6 +31,7 @@ $main-font: 'Lato';
 
 .heading-text {
     font-size: 5rem;
+    color: $accent-color;
 }
 
 .portrait-container {

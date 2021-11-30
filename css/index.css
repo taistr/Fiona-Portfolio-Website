@@ -1,4 +1,13 @@
+/*Header CSS*/
+.header {
+  position: relative;
+}
+
 /*Content CSS*/
+.container {
+  background-color: #FFDFC1;
+}
+
 .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24,6 +33,7 @@
 
 .heading-text {
   font-size: 5rem;
+  color: #545454;
 }
 
 .portrait-container {

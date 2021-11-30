@@ -12,7 +12,7 @@ h1 {
 
 h2 {
   color: #545454;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 p {
@@ -20,13 +20,26 @@ p {
   font-size: 1.2rem;
 }
 
+/*Whole page CSS*/
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .container {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   background-color: #FBFBF0;
 }
 
+.content {
+  padding: 0rem 1.5rem;
+  padding-top: 5rem;
+}
+
+/* Display Card CSS */
 .role-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,7 +55,6 @@ p {
   border-radius: 1rem;
   padding: 1.5rem;
   width: 100%;
-  cursor: pointer;
   -webkit-transition-duration: 0.1s;
           transition-duration: 0.1s;
 }
@@ -59,16 +71,51 @@ p {
   color: black;
 }
 
-.about-text-container {
-  padding: 0rem 1.5rem;
+/* Content CSS */
+.subject-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-.about-text-container h1 {
-  margin-bottom: 2rem;
+.tutor-profile {
+  color: #545454;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
-.about-text-container p {
+.tutor-section {
   margin-bottom: 1rem;
+}
+
+.tutor-section h1 {
+  margin-bottom: 1rem;
+}
+
+.tutor-section h2 {
+  margin-bottom: 1rem;
+}
+
+.tutor-section p {
+  margin-bottom: 1rem;
+}
+
+.yt-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (min-width: 769px) {
@@ -91,9 +138,6 @@ p {
   .heading-container h1 {
     margin-right: 2rem;
   }
-  .about-text-container {
-    margin-bottom: 2rem;
-  }
   .role-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -108,22 +152,23 @@ p {
     border-radius: 1rem;
     padding: 1.5rem;
     padding-bottom: 0rem;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    cursor: pointer;
+    width: 100%;
     -webkit-transition-duration: 0.1s;
             transition-duration: 0.1s;
+  }
+  .role-fun-container h2 {
+    text-align: center;
   }
   .role-fun-container p {
     visibility: hidden;
     font-family: "Caveat", cursive;
   }
-  .role-fun-container:hover {
-    padding-bottom: 1.5rem;
+  .tutor-profile {
+    text-decoration: none;
   }
-  .role-fun-container:hover p {
-    visibility: visible;
+  .tutor-profile:hover {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
   }
 }
-/*# sourceMappingURL=about.css.map */
+/*# sourceMappingURL=tutor.css.map */
