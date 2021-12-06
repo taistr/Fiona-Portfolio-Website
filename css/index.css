@@ -5,7 +5,7 @@
 
 /*Content CSS*/
 .container {
-  background-color: #FFDFC1;
+  background-color: #FBFBF0;
 }
 
 .content {
@@ -33,7 +33,7 @@
 
 .heading-text {
   font-size: 5rem;
-  color: #545454;
+  color: #FFB570;
 }
 
 .portrait-container {
@@ -51,7 +51,7 @@
 }
 
 .about-circle {
-  background-color: white;
+  background-color: #FFDFC1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,6 +225,17 @@
   /* Content */
   .portrait {
     width: 25rem;
+  }
+  .content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0rem 15%;
+  }
+  .about-circle {
+    width: 10rem;
+    height: 10rem;
   }
 }
 /*# sourceMappingURL=index.css.map */

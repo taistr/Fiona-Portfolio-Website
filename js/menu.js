@@ -4,7 +4,7 @@ let emojis = ["1F44B", "1F44F", "1F44A", "1F44C"];
 let emojiCount = 0;
 
 let role_emoji = ["1F4DA", "1F393", "1F3A8"];
-let role = ["Tutor", "Artist", "Student"];
+let role = ["Tutor", "Student", "Artist"];
 let roleCount = 0;
 
 function toggleMenu() {

@@ -13,7 +13,7 @@ $hand-font: 'Caveat', cursive;
 
 /*Content CSS*/
 .container {
-    background-color: $primary-color;
+    background-color: $background-color;
 }
 
 .content {
@@ -31,7 +31,7 @@ $hand-font: 'Caveat', cursive;
 
 .heading-text {
     font-size: 5rem;
-    color: $accent-color;
+    color: $highlight-color;
 }
 
 .portrait-container {
@@ -45,7 +45,7 @@ $hand-font: 'Caveat', cursive;
 }
 
 .about-circle {
-    background-color: white;
+    background-color: $primary-color;
 
     display: flex;
     justify-content: center;
@@ -156,4 +156,13 @@ $hand-font: 'Caveat', cursive;
         width: 25rem;
     }
 
+    .content {
+        flex-direction: row;
+        margin: 0rem 15%;
+    }
+
+    .about-circle {
+        width: 10rem;
+        height: 10rem;
+    }
 }
